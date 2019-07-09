@@ -41,6 +41,8 @@ class FourthViewController: UIViewController,UINavigationControllerDelegate,UIIm
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         
         let image = info[UIImagePickerController.InfoKey.originalImage]as! UIImage
+        self.iMageoutlet.layer.cornerRadius = self.iMageoutlet.frame.size.width / 2;
+        self.iMageoutlet.clipsToBounds = true;
         iMageoutlet.image = image
         dismiss(animated: true, completion: nil)
         

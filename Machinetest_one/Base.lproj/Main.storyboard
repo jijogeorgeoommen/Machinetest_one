@@ -220,6 +220,19 @@
                                     <segue destination="wOC-Fb-vBE" kind="show" id="1If-Nc-jFS"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fyR-0I-i3Z">
+                                <rect key="frame" x="133" y="705" width="148" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <state key="normal" title="webview">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="rEgaCtion:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fI2-97-8C9"/>
+                                    <segue destination="Whq-wu-zA7" kind="show" id="cf1-Jm-2kv"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -329,7 +342,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hdr-i2-JrA">
-                                <rect key="frame" x="28" y="168" width="359" height="252"/>
+                                <rect key="frame" x="60" y="168" width="264" height="248"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4sC-Jg-57f">
@@ -381,10 +394,6 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="clV-u2-d9P">
-                                <rect key="frame" x="0.0" y="389" width="414" height="216"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                            </pickerView>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ILK-zD-d8b">
                                 <rect key="frame" x="24" y="224" width="367" height="56"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -408,8 +417,54 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rqo-Kt-khd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <pickerView contentMode="scaleToFill" id="clV-u2-d9P">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="216"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                </pickerView>
             </objects>
             <point key="canvasLocation" x="3673.913043478261" y="115.84821428571428"/>
+        </scene>
+        <!--Sixth View Controller-->
+        <scene sceneID="Rvz-xq-qDD">
+            <objects>
+                <viewController storyboardIdentifier="SixthViewControllerid" id="Whq-wu-zA7" customClass="SixthViewController" customModule="Machinetest_one" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KDL-Hq-cTc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="4Sx-3W-Yup">
+                                <rect key="frame" x="0.0" y="-14" width="414" height="933"/>
+                            </imageView>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ofq-lH-6TT">
+                                <rect key="frame" x="0.0" y="44" width="414" height="836"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Whq-wu-zA7" id="Uu7-3x-cqK"/>
+                                </connections>
+                            </webView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="Fpx-Gy-FZH">
+                                <rect key="frame" x="197" y="361" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="mcf-6o-uLq" firstAttribute="trailing" secondItem="4Sx-3W-Yup" secondAttribute="trailing" id="ClG-Jd-7ea"/>
+                            <constraint firstItem="4Sx-3W-Yup" firstAttribute="leading" secondItem="mcf-6o-uLq" secondAttribute="leading" id="Uyi-Jh-JHQ"/>
+                            <constraint firstItem="4Sx-3W-Yup" firstAttribute="top" secondItem="mcf-6o-uLq" secondAttribute="top" id="fow-A8-qW7"/>
+                            <constraint firstItem="mcf-6o-uLq" firstAttribute="bottom" secondItem="4Sx-3W-Yup" secondAttribute="bottom" id="rwY-fB-Xl2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="mcf-6o-uLq"/>
+                    </view>
+                    <connections>
+                        <outlet property="aCtivityindicatoroutlet" destination="Fpx-Gy-FZH" id="F0q-r4-f9D"/>
+                        <outlet property="wEbviewoutlet" destination="Ofq-lH-6TT" id="X5t-2W-TYe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FEm-U4-I8f" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4388.4057971014499" y="118.52678571428571"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Vs2-M9-7jj">

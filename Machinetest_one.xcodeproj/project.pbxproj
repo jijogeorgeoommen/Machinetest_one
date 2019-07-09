@@ -18,6 +18,7 @@
 		2B65486422A4F25B006AB785 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B65486322A4F25B006AB785 /* ThirdViewController.swift */; };
 		2B65486622A4FA30006AB785 /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B65486522A4FA30006AB785 /* FourthViewController.swift */; };
 		2B65486822A4FE26006AB785 /* FifthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B65486722A4FE26006AB785 /* FifthViewController.swift */; };
+		2B65486A22A52874006AB785 /* SixthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B65486922A52874006AB785 /* SixthViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		2B65486322A4F25B006AB785 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		2B65486522A4FA30006AB785 /* FourthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
 		2B65486722A4FE26006AB785 /* FifthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FifthViewController.swift; sourceTree = "<group>"; };
+		2B65486922A52874006AB785 /* SixthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SixthViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 				2B65486722A4FE26006AB785 /* FifthViewController.swift */,
 				2B65483C22A4E1D1006AB785 /* LaunchScreen.storyboard */,
 				2B65483F22A4E1D1006AB785 /* Info.plist */,
+				2B65486922A52874006AB785 /* SixthViewController.swift */,
 			);
 			path = Machinetest_one;
 			sourceTree = "<group>";
@@ -269,6 +272,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B65486822A4FE26006AB785 /* FifthViewController.swift in Sources */,
+				2B65486A22A52874006AB785 /* SixthViewController.swift in Sources */,
 				2B65486222A4E9CF006AB785 /* SecondViewController.swift in Sources */,
 				2B65483622A4E1D0006AB785 /* ViewController.swift in Sources */,
 				2B65486422A4F25B006AB785 /* ThirdViewController.swift in Sources */,
